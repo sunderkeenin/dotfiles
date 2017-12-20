@@ -3,6 +3,5 @@ I don't even have a standard organization for anything yet.
 I just put stuff where it makes sense to me for my device.
 Good luck if you decide it's worth making sense of this.
 
-Extra note: The 'suckless' directory is just for dmenu and st because I use those, and I had to fix the 
-colors/fonts for those, being too incompetent to go further for now. Current goal is to get those directories 
-to actually upload.
+Extra note: I don't know how to "safely" put my st and dmenu into this repo without breaking things, so I just 
+put the config.h into here if you want to see the colors and font I ended up using.

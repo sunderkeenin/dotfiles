@@ -1,0 +1,2 @@
+exec /bin/i3
+xrandr --output DisplayPort-1 --mode 1920x1080 --rate 144

@@ -1,0 +1,1 @@
+mocp -i | grep File | sed -e 's_File: /home/sunderkeenin/Music/__' -e 's:.opus::' -e 's:.mp3::' -e 's:.m4a::' -e 's:.ogg::'

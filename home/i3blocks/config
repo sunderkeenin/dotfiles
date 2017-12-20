@@ -1,0 +1,63 @@
+# i3blocks config file
+
+# UNICODE LABELS
+# http://jrgraphix.net/r/Unicode/2600-26FF
+# http://fontawesome.io/cheatsheet/
+# Chess: ♚ ♛ ♜ ♝ ♞ ♟
+
+# Unused properties:
+# short_text
+# full_text
+# name
+# signal
+# urgent
+
+# Global properties
+command=~/.config/i3blocks/scripts/$BLOCK_NAME
+align=center
+markup=none
+separator=false
+separator_block_width=8
+
+[currentsong]
+interval=5
+
+[bandwidth]
+#label=  # 
+#instance=eth0
+#color=#77FF00
+color=#33AA00
+interval=1
+
+[temperature]
+label=
+separator=false
+interval=5
+
+[disk]
+label=HDD
+#instance=/mnt/data
+interval=30
+
+[memory]
+label=
+separator=false
+interval=30
+
+[cpu_usage]
+label= CPU
+interval=10
+min_width="CPU:0%  "
+separator=false
+
+[calendar]
+command=date '+%Y-%m-%d'; [[ -z "${BLOCK_BUTTON}" ]] || i3-msg exec gsimplecal
+label= 
+# 
+interval=60
+
+[time]
+command=date '+%H:%M:%S  '
+label=
+interval=1
+

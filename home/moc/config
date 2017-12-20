@@ -1,0 +1,83 @@
+# I just read down /usr/share/doc/moc/config.example and set 
+# each to what I wanted.
+
+MusicDir = ~/Music
+ReadTags = no
+StartInMusicDir = yes
+Sort = FileName
+ShowStreamErrors = no
+MP3IgnoreCRCErrors = yes
+Repeat = no
+Shuffle = yes
+AutoNext = yes
+InputBuffer = 512
+OutputBuffer = 512
+Prebuffering = 64
+SoundDriver = ALSA
+ALSADevice = default
+ALSAMixer1 = PCM
+ALSAMixer2 = Master
+Softmixer_SaveState = yes
+Equalizer_SaveState = no
+ShowHiddenFiles = no
+HideFileExtension = no
+ShowFormat = yes
+ShowTime = yes
+
+# Noting terminal emulator here
+XTerms = st
+XTerms += st-256color
+
+# Noting themes here
+Theme = sunder_theme
+
+AutoLoadLyrics = no
+MOCDir = ~/.moc
+UseMMap = yes
+UseMimeMagic = no
+UseRCC = yes
+UseRCCForFilesystem = yes
+EnforceTagsEncoding = no
+FileNamesIconv = no
+NonUTFXterm = no
+Precache = yes
+SavePlaylist = yes
+SyncPlaylist = yes
+
+# Noting keymap happens here
+Keymap = sunder_keymap
+
+ASCIILines = no
+SeekTime = 1
+SilentSeekTime = 5
+PreferredDecoders  = aac(aac,ffmpeg):m4a(ffmpeg)
+PreferredDecoders += mpc(musepack,*,ffmpeg):mpc8(musepack,*,ffmpeg)
+PreferredDecoders += sid(sidplay2):mus(sidplay2)
+PreferredDecoders += wav(sndfile,*,ffmpeg)
+PreferredDecoders += wv(wavpack,*,ffmpeg)
+PreferredDecoders += audio/aac(aac):audio/aacp(aac):audio/m4a(ffmpeg)
+PreferredDecoders += audio/wav(sndfile,*)
+PreferredDecoders += ogg(vorbis,ffmpeg):oga(vorbis,ffmpeg):ogv(ffmpeg)
+PreferredDecoders += opus(ffmpeg)
+PreferredDecoders += spx(speex)
+PreferredDecoders += application/ogg(vorbis):audio/ogg(vorbis)
+ResampleMethod = Linear
+ForceSampleRate = 0
+
+# Note this, some soundcards need this to be no for mp3s to play.
+Allow24bitOutput = yes
+
+UseRealtimePriority = no
+TagsCacheSize = 5024
+PlaylistNumbering = yes
+FollowPlayedFile = yes
+CanStartInPlaylist = no
+UseCursorSelection = no
+SetXtermTitle = yes
+SetScreenTitle = yes
+PlaylistFullPaths = no
+BlockDecorators = "`\"'"
+MessageLingerTime = 3
+PrefixQueuedMessages = yes
+ErrorMessagesQueued = "!"
+QueueNextSongReturn = yes

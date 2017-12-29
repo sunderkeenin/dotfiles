@@ -1,10 +1,5 @@
 # i3blocks config file
 
-# UNICODE LABELS
-# http://jrgraphix.net/r/Unicode/2600-26FF
-# http://fontawesome.io/cheatsheet/
-# Chess: ♚ ♛ ♜ ♝ ♞ ♟
-
 # Unused properties:
 # short_text
 # full_text
@@ -30,7 +25,7 @@ color=#33AA00
 interval=1
 
 [temperature]
-label=
+label=
 separator=false
 interval=5
 
@@ -40,14 +35,14 @@ label=HDD
 interval=30
 
 [memory]
-label=
+label=RAM
 separator=false
 interval=30
 
 [cpu_usage]
-label=⚙ CPU
+label=CPU
 interval=10
-min_width="CPU:0% "
+min_width="CPU:0%"
 separator=false
 
 [calendar]

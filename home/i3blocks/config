@@ -40,20 +40,19 @@ label=HDD
 interval=30
 
 [memory]
-label=
+label=
 separator=false
 interval=30
 
 [cpu_usage]
-label= CPU
+label=⚙ CPU
 interval=10
-min_width="CPU:0%  "
+min_width="CPU:0% "
 separator=false
 
 [calendar]
 command=date '+%Y-%m-%d'; [[ -z "${BLOCK_BUTTON}" ]] || i3-msg exec gsimplecal
-label= 
-# 
+label=
 interval=60
 
 [time]

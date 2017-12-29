@@ -16,7 +16,7 @@ focus_follows_mouse no
 set $mod Mod1
 
 # Monitor Variables
-set $m1 DisplayPort-1
+set $m1 DisplayPort-0
 set $m2 HDMI-A-0
 
 # Workspace Variables
@@ -71,6 +71,14 @@ assign [class="nw.exe"] $workspace1
 assign [class="Skyborn.amd64"] $workspace1
 # Rogue Legacy
 assign [class="RogueLegacy.bin.x86_64"] $workspace1
+# Killing Floor
+assign [class="killingfloor-bin"] $workspace1
+# Killing Floor 2
+assign [class="kfgame.exe"] $workspace1
+# Seum
+assign [class="Seum"] $workspace1
+# Dust: An Elysian Tale
+assign [class="DustAET.bin.x86_64"] $workspace1
 
 # Workspace Monitor Assignments
 # Monitor 1

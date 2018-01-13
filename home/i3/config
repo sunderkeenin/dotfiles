@@ -79,6 +79,8 @@ assign [class="kfgame.exe"] $workspace1
 assign [class="Seum"] $workspace1
 # Dust: An Elysian Tale
 assign [class="DustAET.bin.x86_64"] $workspace1
+# Baldur's Gate
+assign [class="BaldursGate"] $workspace1
 
 # Workspace Monitor Assignments
 # Monitor 1
@@ -298,4 +300,3 @@ exec --no-startup-id xsetroot -solid "#000e10"
 exec-always monitorfix
 exec st -c music_on_console -e mocp
 exec st -e htop
-exec --no-startup-id xautolock -time 15 -locker 'i3lock --ignore-empty-password -c 000000'

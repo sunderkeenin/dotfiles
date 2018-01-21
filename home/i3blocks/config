@@ -30,8 +30,18 @@ separator=false
 interval=5
 
 [disk]
+label=root
+instance=/
+interval=30
+
+[disk]
 label=HDD
-#instance=/mnt/data
+instance=/home
+interval=30
+
+[disk]
+label=SSD
+instance=/ssd
 interval=30
 
 [memory]

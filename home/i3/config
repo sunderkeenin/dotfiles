@@ -81,6 +81,8 @@ assign [class="Seum"] $workspace1
 assign [class="DustAET.bin.x86_64"] $workspace1
 # Baldur's Gate
 assign [class="BaldursGate"] $workspace1
+# Immortal Redneck
+assign [class="ImmortalRedneck.x64"] $workspace1
 
 # Workspace Monitor Assignments
 # Monitor 1

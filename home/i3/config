@@ -25,7 +25,7 @@ set $workspace2 "2:Terminals"
 set $workspace3 "3:Game Management"
 set $workspace4 "4:Files"
 set $workspace5 "5:Media Players/Editors"
-set $workspace6 "6:Chromium"
+set $workspace6 "6:Browsers"
 set $workspace7 "7:Discord"
 set $workspace8 "8:OBS"
 set $workspace9 "9:Steam"
@@ -45,6 +45,7 @@ assign [class="Vlc"] $workspace5
 assign [class="music_on_console"] $workspace10
 assign [class="Gimp-2.8"] $workspace5
 assign [class="steam.exe"] $workspace3
+assign [class="Firefox"] $workspace6
 
 # Game Window Assignments
 # Source
@@ -292,13 +293,15 @@ bindsym XF86AudioLowerVolume exec mocp --volume "-1"
 bindsym XF86AudioPlay exec mocp -G
 bindsym XF86AudioNext exec mocp --next
 bindsym XF86AudioPrev exec mocp --previous
+bindsym XF86AudioStop exec mocp -x
 
 # Startup Programs
-exec chromium
+exec firefox
 exec steam-runtime
 exec discord-canary
 exec-always source ~/.bashrc
 exec --no-startup-id xsetroot -solid "#000e10"
 exec-always monitorfix
+exec ~/scripts/easymusic.sh
 exec st -c music_on_console -e mocp
 exec st -e htop

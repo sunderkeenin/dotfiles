@@ -10,6 +10,6 @@ PS1='[\u@\h \W]\$ '
 alias autoclick=~/gitmess/xautoclick-0.31/gautoclick2
 alias monitorfix="xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144"
 alias blackice="~/Games/Black_Ice"
-alias launch_moc="st -c music_on_console -e mocp &"
 alias update_discord="exec ~/scripts/discordinstall"
 alias steam-wine='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe >/dev/null 2>&1 &'
+alias easymusic="exec ~/scripts/easymusic.sh"

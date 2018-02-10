@@ -46,6 +46,8 @@ assign [class="music_on_console"] $workspace10
 assign [class="Gimp-2.8"] $workspace5
 assign [class="steam.exe"] $workspace3
 assign [class="Firefox"] $workspace6
+assign [class="Mainwindow.py"] $workspace3
+
 
 # Game Window Assignments
 # Source
@@ -84,6 +86,8 @@ assign [class="DustAET.bin.x86_64"] $workspace1
 assign [class="BaldursGate"] $workspace1
 # Immortal Redneck
 assign [class="ImmortalRedneck.x64"] $workspace1
+# Osu
+assign [class="osu!.exe"] $workspace1
 
 # Workspace Monitor Assignments
 # Monitor 1
@@ -302,6 +306,5 @@ exec discord-canary
 exec-always source ~/.bashrc
 exec --no-startup-id xsetroot -solid "#000e10"
 exec-always monitorfix
-exec ~/scripts/easymusic.sh
-exec st -c music_on_console -e mocp
+exec easymusic
 exec st -e htop

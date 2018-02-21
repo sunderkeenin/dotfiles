@@ -88,6 +88,11 @@ assign [class="BaldursGate"] $workspace1
 assign [class="ImmortalRedneck.x64"] $workspace1
 # Osu
 assign [class="osu!.exe"] $workspace1
+assign [class="Wine"] $workspace1
+# Slime Rancher
+assign [class="SlimeRancher.x86_64"] $workspace1
+# Path of Exile
+assign [class="pathofexile.exe"] $workspace1
 
 # Workspace Monitor Assignments
 # Monitor 1
@@ -294,10 +299,10 @@ bindsym $mod+Shift+x exec i3lock --ignore-empty-password -c 000000
 bindsym XF86AudioRaiseVolume exec mocp --volume "+1"
 bindsym XF86AudioLowerVolume exec mocp --volume "-1"
 # Media player controls
-bindsym XF86AudioPlay exec mocp -G
-bindsym XF86AudioNext exec mocp --next
-bindsym XF86AudioPrev exec mocp --previous
-bindsym XF86AudioStop exec mocp -x
+bindsym $mod+shift+p exec mocp -G
+bindsym $mod+shift+equal exec mocp --next
+bindsym $mod+shift+minus exec mocp --previous
+bindsym $mod+shift+Escape exec mocp -x
 
 # Startup Programs
 exec firefox

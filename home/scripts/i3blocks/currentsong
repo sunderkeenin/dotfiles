@@ -1,2 +1,3 @@
 mocp -i | grep File | sed -e 's_File: /home/sunderkeenin/Music/__' -e 's:Music/::' -e 's:-: :g' -e's:_: :g' -e 's:.opus::' -e 's:.mp3::' -e 's:.m4a::' -e 's:.ogg::' > /home/sunderkeenin/configs/home/scripts/i3blocks/currentsong.txt
-tail -n 1 /home/sunderkeenin/configs/home/scripts/i3blocks/currentsong.txt | sed -e 's:  : :g' -e 's:   : :g'
+tail -n 1 /home/sunderkeenin/configs/home/scripts/i3blocks/currentsong.txt | sed -e 's:     : :g' -e 's:    : :g' -e 's:   : :g' -e 's:  : :'
+

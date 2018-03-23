@@ -1,2 +1,2 @@
 cd ~/configs
-pacman -Qe > currentpackages_$(date +%Y-%M-%S).txt
+pacman -Qe > currentpackages_$(date +%F).txt

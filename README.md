@@ -1,4 +1,3 @@
-Just dotfiles. Don't expect everything here to make sense.
-I don't even have a standard organization for anything yet.
-I just put stuff where it makes sense to me for my device.
-Good luck if you decide it's worth making sense of this.
+Just my personal dotfiles backup. 
+The package list might help to make sense of some of it, but most of it is due to this being a hyperspecific config for me personally with my personal uses, mistakes, and general tomfoolery.
+There might be something here or there worth taking though, so 🤷.

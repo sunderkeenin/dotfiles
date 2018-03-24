@@ -313,6 +313,10 @@ exec firefox
 exec steam-runtime
 exec discord-canary
 exec-always source ~/.bashrc
-exec --no-startup-id feh --bg-scale /home/sunderkeenin/configs/backgrounds/desktop_background.png
 exec-always monitorfix
 exec ~/scripts/easymusic.sh
+
+# Background
+exec --no-startup-id feh --bg-scale /home/sunderkeenin/configs/backgrounds/currentbg.jpg
+//For random background in whatever folder you set I have this.
+//exec ~/scripts/randombg.sh

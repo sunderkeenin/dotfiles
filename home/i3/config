@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-set $term = sakura
+set $term sakura
 # focus follows mouse cursor w/o clicks? y/n
 focus_follows_mouse no
 
@@ -49,6 +49,7 @@ assign [class="Firefox"] $workspace6
 assign [class="Mainwindow.py"] $workspace3
 assign [class="Sakura"] $workspace2
 assign [class="Falkon"] $workspace6
+assign [class="Tuxcmd"] $workspace4
 
 # Game Window Assignments
 # Source
@@ -98,6 +99,12 @@ assign [class="SlimeRancher.x86_64"] $workspace1
 assign [class="pathofexile.exe"] $workspace1
 # DCSS
 assign [class="crawl-tiles"] $workspace1
+# Dofus
+assign [class="Adl"] $workspace1
+# Barony
+assign [class="barony.x86_64"] $workspace1
+# Neverwinter Nights: Enhanced Edition
+assign [class="nwnmain-linux"]
 
 # Workspace Monitor Assignments
 # Monitor 1
@@ -309,7 +316,7 @@ bindsym XF86AudioNext exec mocp --next
 bindsym XF86AudioPrev exec mocp --previous
 
 # Startup Programs
-exec firefox
+exec falkon
 exec steam-runtime
 exec discord-canary
 exec-always source ~/.bashrc
@@ -318,5 +325,5 @@ exec ~/scripts/easymusic.sh
 
 # Background
 exec --no-startup-id feh --bg-scale /home/sunderkeenin/configs/backgrounds/currentbg.jpg
-//For random background in whatever folder you set I have this.
-//exec ~/scripts/randombg.sh
+# For random backgrounds.
+# exec ~/scripts/randombg.sh

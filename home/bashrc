@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export TERMINAL=sakura
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias autoclick=~/gitmess/xautoclick-0.31/gautoclick2

@@ -50,6 +50,7 @@ assign [class="Mainwindow.py"] $workspace3
 assign [class="Sakura"] $workspace2
 assign [class="Falkon"] $workspace6
 assign [class="Tuxcmd"] $workspace4
+assign [class="Midori"] $workspace6
 
 # Game Window Assignments
 # Source

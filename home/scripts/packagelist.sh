@@ -1,1 +1,3 @@
-pacman -Qe > ~/configs/package_list_archives/currentpackages_$(date +%F).txt
+#!/bin/sh
+cd  ~/configs/package_list_archives/
+pacman -Qe > currentpackages_$(date +%F).txt

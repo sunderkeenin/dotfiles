@@ -51,6 +51,7 @@ assign [class="Sakura"] $workspace2
 assign [class="Falkon"] $workspace6
 assign [class="Tuxcmd"] $workspace4
 assign [class="Midori"] $workspace6
+assign [class="Eolie"] $workspace6
 
 # Game Window Assignments
 # Source
@@ -105,7 +106,7 @@ assign [class="Adl"] $workspace1
 # Barony
 assign [class="barony.x86_64"] $workspace1
 # Neverwinter Nights: Enhanced Edition
-assign [class="nwnmain-linux"]
+assign [class="nwnmain-linux"] $workspace 1
 
 # Workspace Monitor Assignments
 # Monitor 1
@@ -151,6 +152,12 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Toggle speedrun timer for streaming.
+bindsym Shift+$mod+ctrl+q exec ~/scripts/speedrun-tools/timer.sh
+
+# End speedrun timer for end of run.
+bindsym Shift+$mod+ctrl+e exec pkill -f timer.sh
 
 # screenshot binds
 bindsym Shift+F12 exec maim --hidecursor -s  ~/Pictures/$(date +%F-%T).png

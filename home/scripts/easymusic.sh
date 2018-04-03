@@ -1,4 +1,4 @@
 #!/bin/sh
 mocp -S
-mocp --music-dir ~/Music -ap
-mocp -P
+cd ~/Music
+mocp --clear --append . --play

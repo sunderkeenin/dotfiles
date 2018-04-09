@@ -52,6 +52,8 @@ assign [class="Falkon"] $workspace6
 assign [class="Tuxcmd"] $workspace4
 assign [class="Midori"] $workspace6
 assign [class="Eolie"] $workspace6
+assign [class="Min"] $workspace6
+assign [class="Electron"] $workspace6
 
 # Game Window Assignments
 # Source

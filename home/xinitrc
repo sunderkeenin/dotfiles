@@ -1,4 +1,6 @@
-export TERMINAL=sakura
+export TERMINAL=urxvt
 exec i3
 xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144
 connmanctl enable ethernet
+exec --no-startup-id xcompmgr -r 0 -o 0 -l 0 -t 0 -I 0 -O 0 -D 0 -C -n
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources

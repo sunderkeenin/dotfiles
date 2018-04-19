@@ -4,14 +4,14 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Droid Sans Mono Slashed for Powerline:size=13"
+	"D2Coding:size=14"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#33AA00", "#000e10" },
-	[SchemeSel] = { "#33AA00", "#005577" },
-	[SchemeOut] = { "#33AA00", "#00ffff" },
+	[SchemeNorm] = { "#AA8800", "#000e10" },
+	[SchemeSel] = { "#AA8800", "#005577" },
+	[SchemeOut] = { "#AA8800", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;

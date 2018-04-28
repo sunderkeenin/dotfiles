@@ -7,3 +7,82 @@ Apr 18 22:05:37 liblua.so.5.3: cannot open shared object file: No such file or d
 Apr 18 22:05:37 Perl interface loaded
 Apr 18 22:05:37 Sysinfo plugin loaded
 Apr 18 22:05:37 Python interface loaded
+**** BEGIN LOGGING AT Thu Apr 19 22:45:58 2018
+
+Apr 19 22:45:58 Checksum plugin loaded
+Apr 19 22:45:58 FiSHLiM plugin loaded
+Apr 19 22:45:58 Lua version 1.3/5.3 loaded.
+Apr 19 22:45:58 Perl interface loaded
+Apr 19 22:45:58 Sysinfo plugin loaded
+Apr 19 22:45:58 Python interface loaded
+Apr 19 22:45:58 *	Looking up irc.twitch.tv
+Apr 19 22:45:58 *	Connecting to irc-production-388322493.us-west-2.elb.amazonaws.com (34.213.102.66:6667)
+Apr 19 22:45:58 *	Connected. Now logging in.
+Apr 19 22:45:58 *	Capabilities supported: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+Apr 19 22:45:58 *	Capabilities requested: twitch.tv/membership 
+**** ENDING LOGGING AT Thu Apr 19 22:45:58 2018
+
+**** BEGIN LOGGING AT Thu Apr 19 23:33:54 2018
+
+Apr 19 23:33:54 Checksum plugin loaded
+Apr 19 23:33:54 FiSHLiM plugin loaded
+Apr 19 23:33:54 Lua version 1.3/5.3 loaded.
+Apr 19 23:33:54 Perl interface loaded
+Apr 19 23:33:54 Sysinfo plugin loaded
+Apr 19 23:33:54 Python interface loaded
+Apr 19 23:33:54 *	Looking up irc.twitch.tv
+Apr 19 23:33:54 *	Connecting to irc-production-388322493.us-west-2.elb.amazonaws.com (35.163.17.216:6667)
+Apr 19 23:33:54 *	Connected. Now logging in.
+Apr 19 23:33:54 *	Capabilities supported: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+Apr 19 23:33:54 *	Capabilities requested: twitch.tv/membership 
+**** ENDING LOGGING AT Thu Apr 19 23:33:54 2018
+
+**** BEGIN LOGGING AT Sat Apr 21 15:20:22 2018
+
+Apr 21 15:20:22 Checksum plugin loaded
+Apr 21 15:20:22 FiSHLiM plugin loaded
+Apr 21 15:20:22 Lua version 1.3/5.3 loaded.
+Apr 21 15:20:22 Perl interface loaded
+Apr 21 15:20:22 Sysinfo plugin loaded
+Apr 21 15:20:22 Python interface loaded
+Apr 21 15:20:22 *	Looking up irc.twitch.tv
+Apr 21 15:20:23 *	Connecting to irc-production-388322493.us-west-2.elb.amazonaws.com (35.164.90.161:6667)
+Apr 21 15:20:23 *	Connected. Now logging in.
+Apr 21 15:20:23 *	Capabilities supported: twitch.tv/commands twitch.tv/membership twitch.tv/tags
+Apr 21 15:20:23 *	Capabilities requested: twitch.tv/membership 
+**** ENDING LOGGING AT Sat Apr 21 15:20:23 2018
+
+**** BEGIN LOGGING AT Sat Apr 21 17:49:12 2018
+
+Apr 21 17:49:12 Checksum plugin loaded
+Apr 21 17:49:12 FiSHLiM plugin loaded
+Apr 21 17:49:12 Lua version 1.3/5.3 loaded.
+Apr 21 17:49:12 Perl interface loaded
+Apr 21 17:49:12 Sysinfo plugin loaded
+Apr 21 17:49:12 Python interface loaded
+Apr 21 17:49:12 *	Looking up irc.twitch.tv
+Apr 21 17:49:12 *	Connecting to irc-production-388322493.us-west-2.elb.amazonaws.com (34.211.57.21:6667)
+Apr 21 17:49:12 *	Connected. Now logging in.
+Apr 21 17:49:12 *	Disconnected (Remote host closed socket)
+Apr 21 17:49:20 *	Looking up irc.twitch.tv
+Apr 21 17:49:20 *	Connecting to irc-production-388322493.us-west-2.elb.amazonaws.com (34.211.57.21:6667)
+Apr 21 17:49:20 *	Connected. Now logging in.
+Apr 21 17:49:20 *	Capabilities supported: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+Apr 21 17:49:20 *	Capabilities requested: twitch.tv/membership 
+**** ENDING LOGGING AT Sat Apr 21 17:49:20 2018
+
+**** BEGIN LOGGING AT Sat Apr 21 17:53:17 2018
+
+Apr 21 17:53:17 Checksum plugin loaded
+Apr 21 17:53:17 FiSHLiM plugin loaded
+Apr 21 17:53:17 Lua version 1.3/5.3 loaded.
+Apr 21 17:53:17 Perl interface loaded
+Apr 21 17:53:17 Sysinfo plugin loaded
+Apr 21 17:53:17 Python interface loaded
+Apr 21 17:53:17 *	Looking up irc.twitch.tv
+Apr 21 17:53:17 *	Connecting to irc-production-388322493.us-west-2.elb.amazonaws.com (34.211.57.21:6667)
+Apr 21 17:53:17 *	Connected. Now logging in.
+Apr 21 17:53:17 *	Capabilities supported: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+Apr 21 17:53:17 *	Capabilities requested: twitch.tv/membership 
+**** ENDING LOGGING AT Sat Apr 21 17:53:18 2018
+

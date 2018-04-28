@@ -1,7 +1,2 @@
-exec i3
-exec xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144
-exec connmanctl enable ethernet
-exec --no-startup-id xcompmgr -r 0 -o 0 -l 0 -t 0 -I 0 -O 0 -D 0 -C -n
-exec --no-startup-id unclutter
-exec --no-startup-id caffeine -a
+exec sway
 exec xrdb -merge ~/.Xresources

@@ -24,10 +24,6 @@ HideFileExtension = no
 ShowFormat = yes
 ShowTime = yes
 
-# Noting terminal emulator here
-XTerms = sakura
-XTerms += sakura
-
 # Noting themes here
 Theme = sunder_theme
 

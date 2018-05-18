@@ -1,0 +1,366 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Your preferred terminal emulator
+set $term urxvt
+# Your preferred application launcher
+set $menu dmenu_run
+
+# focus follows mouse cursor w/o clicks? y/n
+focus_follows_mouse no
+
+# Workspace Variables
+set $workspace1 "1:Games"
+set $workspace2 "2:Terminals"
+set $workspace3 "3:Game Management"
+set $workspace4 "4:Files"
+set $workspace5 "5:Misc"
+set $workspace6 "6:Browsers"
+set $workspace7 "7:Discord"
+set $workspace8 "8:OBS"
+set $workspace9 "9:Steam"
+set $workspace10 "10:Misc"
+
+### Output configuration
+#
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+#
+# Example configuration:
+#
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+# Monitor Variables
+set $m1 DP-1
+set $m2 HDMI-A-1
+
+# Monitor Locations
+output $m1 position 0 0 resolution 1920x1080
+output $m2 position 1920 0 resolution 1920x1080
+
+# Wallpaper
+output DP-1 background ~/configs/backgrounds/currentbg.jpg stretch
+output HDMI-A-1 background ~/configs/backgrounds/currentbg.jpg stretch
+
+# Workspace Variables
+set $workspace1 "1:Games"
+set $workspace2 "2:Terminals"
+set $workspace3 "3:Game Management"
+set $workspace4 "4:Files"
+set $workspace5 "5:Misc"
+set $workspace6 "6:Browsers"
+set $workspace7 "7:Discord"
+set $workspace8 "8:OBS"
+set $workspace9 "9:Steam"
+set $workspace10 "10:Misc"
+
+# Workspace Monitor Assignments
+# Monitor 1
+workspace $workspace1 output $m1
+workspace $workspace2 output $m1
+workspace $workspace3 output $m1
+workspace $workspace4 output $m1
+workspace $workspace5 output $m1
+# Monitor 2
+workspace $workspace6 output $m2
+workspace $workspace7 output $m2
+workspace $workspace8 output $m2
+workspace $workspace9 output $m2
+workspace $workspace10 output $m2
+
+# Window Assignments
+assign [class="Audacious"] $workspace10
+assign [class="Chromium"] $workspace6
+assign [class="discord"] $workspace7
+assign [class="Steam"] $workspace9
+assign [class="st"] $workspace2
+assign [class="obs"] $workspace8
+assign [class="battle.net.exe"] $workspace3
+assign [class="Nautilus"] $workspace4
+assign [class="Lutris"] $workspace3
+assign [class="Vlc"] $workspace5
+assign [class="music_on_console"] $workspace10
+assign [class="Gimp-2.8"] $workspace5
+assign [class="steam.exe"] $workspace3
+assign [class="Firefox"] $workspace6
+assign [class="Mainwindow.py"] $workspace3
+assign [class="Sakura"] $workspace2
+assign [class="Falkon"] $workspace6
+assign [class="Tuxcmd"] $workspace4
+assign [class="Midori"] $workspace6
+assign [class="Eolie"] $workspace6
+assign [class="Min"] $workspace6
+assign [class="Electron"] $workspace6
+assign [class="URxvt"] $workspace2
+
+# Game Window Assignments
+# Source
+assign [class="hl2_linux"] $workspace1
+# Celeste
+assign [class="Celeste.bin.x86_64"] $workspace1
+# ToME
+assign [class="t-engine64"] $workspace1
+# Black Ice
+assign [class="Black_Ice.x86_64"] $workspace1
+# Lovely Planet
+assign [class="LovelyPlanet.x86"] $workspace1
+# Antichamber and maybe other UDK-Game stuff
+assign [class="UDKGame-Linux"] $workspace1
+# Rogue Legacy
+assign [class="RogueLegacy.bin.x86_64"] $workspace1
+# Sanctum 2
+assign [class="SanctumGame"] $workspace1
+# Diablo 3
+assign [class="diablo iii64.exe"] $workspace1
+# Portal 2
+assign [class="portal2_linux"] $workspace1
+# IWBTC
+assign [class="nw.exe"] $workspace1
+# Skyborn
+assign [class="Skyborn.amd64"] $workspace1
+# Rogue Legacy
+assign [class="RogueLegacy.bin.x86_64"] $workspace1
+# Killing Floor
+assign [class="killingfloor-bin"] $workspace1
+# Killing Floor 2
+assign [class="kfgame.exe"] $workspace1
+# Seum
+assign [class="Seum"] $workspace1
+# Dust: An Elysian Tale
+assign [class="DustAET.bin.x86_64"] $workspace1
+# Baldur's Gate
+assign [class="BaldursGate"] $workspace1
+# Immortal Redneck
+assign [class="ImmortalRedneck.x64"] $workspace1
+# Osu
+assign [class="osu!.exe"] $workspace1
+assign [class="Wine"] $workspace1
+# Slime Rancher
+assign [class="SlimeRancher.x86_64"] $workspace1
+# Path of Exile
+assign [class="pathofexile.exe"] $workspace1
+# DCSS
+assign [class="crawl-tiles"] $workspace1
+# Dofus
+assign [class="Adl"] $workspace1
+# Barony
+assign [class="barony.x86_64"] $workspace1
+# Neverwinter Nights: Enhanced Edition
+assign [class="nwnmain-linux"] $workspace1
+
+### Input configuration
+#
+# Example configuration:
+#
+#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
+
+### Key bindings
+#
+# Basics:
+#
+    # start a terminal
+    bindsym $mod+Return exec $term
+
+    # kill focused window
+    bindsym $mod+Shift+q kill
+
+    # start your launcher
+    bindsym $mod+d exec $menu
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # reload the configuration file
+    bindsym $mod+Shift+r reload
+
+    # exit sway (logs you out of your wayland session)
+    bindsym $mod+Shift+e exit
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # _move_ the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    # ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Workspaces:
+#
+# switch to workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+
+    # Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # move focus to the parent container
+    bindsym $mod+a focus parent
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+minus scratchpad show
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10 px or 10 ppt
+    bindsym $down resize grow height 10 px or 10 ppt
+    bindsym $up resize shrink height 10 px or 10 ppt
+    bindsym $right resize grow width 10 px or 10 ppt
+
+    # ditto, with arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Media Buttons
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec mocp --volume "+1"
+bindsym XF86AudioLowerVolume exec mocp --volume "-1"
+# Media player controls
+bindsym XF86AudioPlay exec mocp -G
+bindsym XF86AudioNext exec mocp --next
+bindsym XF86AudioPrev exec mocp --previous
+
+# lock screen
+bindsym $mod+Shift+x exec swaylock -c 000000
+
+# borders
+hide_edge_borders both
+default_border pixel 0
+
+# gaps
+gaps outer 0
+gaps inner 2
+smart_gaps on
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    position top
+    swaybar_command swaybar
+	status_command i3blocks
+	font pango:xos4 Terminess Powerline 9
+    colors {
+        background         #000000cD
+        statusline         #AA8800
+        separator          #33AA00
+        
+        focused_workspace  #555555aF #0000005F #AA8800
+        active_workspace   #555555aF #0000005F #AA8800
+        inactive_workspace #001113cF #000000cF #AA8800
+        urgent_workspace   #001113cF #000000cF #AA8800
+        binding_mode       #001113cF #000000cF #AA8800
+    }
+}
+
+# Startup Programs
+exec steam-runtime
+exec discord-canary
+exec-always source ~/.bashrc
+exec ~/scripts/easymusic.sh
+
+include /etc/sway/config.d/*

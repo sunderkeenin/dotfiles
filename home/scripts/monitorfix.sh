@@ -1,3 +1,4 @@
 #!/bin/sh
-xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144
-for output in $(xrandr --prop | grep -E -o -i "^[A-Z\-]+-[0-9]+"); do xrandr --output "$output" --set "scaling mode" "Full aspect"; done
+xrandr --newmode "1920x1080_144.00_rb2"  333.22  1920 1928 1960 2000  1080 1143 1151 1157 +hsync -vsync
+xrandr --addmode DisplayPort-0 1920x1080_144.00_rb2
+xrandr --output DisplayPort-0 --mode 1920x1080_144.00_rb2

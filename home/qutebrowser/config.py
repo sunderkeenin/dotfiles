@@ -64,79 +64,79 @@ c.colors.webpage.bg = 'white'
 # Default monospace fonts. Whenever "monospace" is used in a font
 # setting, it's replaced with the fonts listed here.
 # Type: Font
-c.fonts.monospace = 'Luculent'
+c.fonts.monospace = 'xos4 Terminess Powerline'
 
 # Font used in the completion widget.
 # Type: Font
-c.fonts.completion.entry = '10pt Luculent'
+c.fonts.completion.entry = '10pt xos4 Terminess Powerline'
 
 # Font used in the completion categories.
 # Type: Font
-c.fonts.completion.category = 'bold 10pt Luculent'
+c.fonts.completion.category = 'bold 10pt xos4 Terminess Powerline'
 
 # Font used for the debugging console.
 # Type: QtFont
-c.fonts.debug_console = '10pt Luculent'
+c.fonts.debug_console = '10pt xos4 Terminess Powerline'
 
 # Font used for the downloadbar.
 # Type: Font
-c.fonts.downloads = '10pt Luculent'
+c.fonts.downloads = '10pt xos4 Terminess Powerline'
 
 # Font used for the hints.
 # Type: Font
-c.fonts.hints = 'bold 10pt Luculent'
+c.fonts.hints = 'bold 10pt xos4 Terminess Powerline'
 
 # Font used in the keyhint widget.
 # Type: Font
-c.fonts.keyhint = '10pt Luculent'
+c.fonts.keyhint = '10pt xos4 Terminess Powerline'
 
 # Font used for error messages.
 # Type: Font
-c.fonts.messages.error = '10pt Luculent'
+c.fonts.messages.error = '10pt xos4 Terminess Powerline'
 
 # Font used for info messages.
 # Type: Font
-c.fonts.messages.info = '10pt Luculent'
+c.fonts.messages.info = '10pt xos4 Terminess Powerline'
 
 # Font used for warning messages.
 # Type: Font
-c.fonts.messages.warning = '10pt Luculent'
+c.fonts.messages.warning = '10pt xos4 Terminess Powerline'
 
 # Font used for prompts.
 # Type: Font
-c.fonts.prompts = '10pt Luculent'
+c.fonts.prompts = '10pt xos4 Terminess Powerline'
 
 # Font used in the statusbar.
 # Type: Font
-c.fonts.statusbar = '10pt Luculent'
+c.fonts.statusbar = '10pt xos4 Terminess Powerline'
 
 # Font used in the tab bar.
 # Type: QtFont
-c.fonts.tabs = '10pt Luculent'
+c.fonts.tabs = '10pt xos4 Terminess Powerline'
 
 # Font family for standard fonts.
 # Type: FontFamily
-c.fonts.web.family.standard = 'Luculent'
+c.fonts.web.family.standard = 'xos4 Terminess Powerline'
 
 # Font family for fixed fonts.
 # Type: FontFamily
-c.fonts.web.family.fixed = 'Luculent'
+c.fonts.web.family.fixed = 'xos4 Terminess Powerline'
 
 # Font family for serif fonts.
 # Type: FontFamily
-c.fonts.web.family.serif = 'Luculent'
+c.fonts.web.family.serif = 'xos4 Terminess Powerline'
 
 # Font family for sans-serif fonts.
 # Type: FontFamily
-c.fonts.web.family.sans_serif = 'Luculent'
+c.fonts.web.family.sans_serif = 'xos4 Terminess Powerline'
 
 # Font family for cursive fonts.
 # Type: FontFamily
-c.fonts.web.family.cursive = 'Luculent'
+c.fonts.web.family.cursive = 'xos4 Terminess Powerline'
 
 # Font family for fantasy fonts.
 # Type: FontFamily
-c.fonts.web.family.fantasy = 'Luculent'
+c.fonts.web.family.fantasy = 'xos4 Terminess Powerline'
 
 # Default font size (in pixels) for regular text.
 # Type: Int

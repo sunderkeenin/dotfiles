@@ -8,10 +8,8 @@
 export TERMINAL=urxvt
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
-alias autoclick=~/gitmess/xautoclick-0.31/gautoclick2
-alias monitorfix="exec ~/scripts/monitorfix.sh"
 alias blackice="~/Games/Black_Ice"
+alias monitorfix="~/scripts/monitorfix.sh"
 alias update_discord="exec ~/scripts/discordinstall.sh"
-alias steam-wine='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe >/dev/null 2>&1 &'
 alias easymusic="exec ~/scripts/easymusic.sh"
 alias packagelist="exec ~/scripts/packagelist.sh"

@@ -30,13 +30,8 @@ separator=false
 interval=5
 
 [disk]
-label=root
-instance=/
-interval=30
-
-[disk]
 label=HDD
-instance=/home
+instance=/
 interval=30
 
 [disk]

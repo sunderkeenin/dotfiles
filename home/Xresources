@@ -1,13 +1,14 @@
 URxvt*letterSpace: 1
 URxvt*transparent: true
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/cFFF
+URxvt*shading: 20
+*/URxvt*background: rgba:0000/0000/0000/cFFF
 URxvt*scrollBar: false
 URxvt*scrollBar_floating: true
 URxvt*scrollstyle: plain
 URxvt*thickness: 1
-URxvt*font: xft:Luculent-9
-URxvt*boldFont: xft:Luculent-9
+URxvt*font: xft:xos4\ Terminess\ Powerline-9
+URxvt*boldFont: xft:xos4\ Terminess\ Powerline-9
 URxvt*foreground: #AA8800
 URxvt*saveLines: 500
 URxvt*borderLess: false

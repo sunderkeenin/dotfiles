@@ -3,49 +3,5 @@
 
 config_version: 2
 settings:
-  fonts.completion.category:
-    global: bold 10pt D2Coding
-  fonts.completion.entry:
-    global: 10pt D2Coding
-  fonts.debug_console:
-    global: 10pt D2Coding
-  fonts.downloads:
-    global: 10pt D2Coding
-  fonts.hints:
-    global: bold 10pt D2Coding
-  fonts.keyhint:
-    global: 10pt D2Coding
-  fonts.messages.error:
-    global: 10pt D2Coding
-  fonts.messages.info:
-    global: 10pt D2Coding
-  fonts.messages.warning:
-    global: 10pt D2Coding
-  fonts.monospace:
-    global: D2Coding
-  fonts.prompts:
-    global: 10pt D2Coding
-  fonts.statusbar:
-    global: 10pt D2Coding
-  fonts.tabs:
-    global: 10pt D2Coding
-  fonts.web.family.cursive:
-    global: D2Coding
-  fonts.web.family.fantasy:
-    global: D2Coding
-  fonts.web.family.fixed:
-    global: D2Coding
-  fonts.web.family.sans_serif:
-    global: D2Coding
-  fonts.web.family.serif:
-    global: D2Coding
-  fonts.web.family.standard:
-    global: D2Coding
-  fonts.web.size.default:
-    global: 14
-  fonts.web.size.default_fixed:
-    global: 10
-  fonts.web.size.minimum:
-    global: 10
-  fonts.web.size.minimum_logical:
-    global: 10
+  backend:
+    global: webkit
